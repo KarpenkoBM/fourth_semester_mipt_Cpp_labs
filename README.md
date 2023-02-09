@@ -1,2 +1,2 @@
-# fourth_semester_mipt_C-_labs
-Here are home tasks from MIPT advanced C++course by Nikita Popov
+# fourth_semester_mipt_Cpp_labs
+Here are home tasks from MIPT advanced Cpp course by Nikita Popov
