@@ -86,27 +86,25 @@ int count_uneven_nombers(std::vector<int>& v)
     }
       return nomber;
 }
+ bool isPrime(int n)
+{
+    if (n <= 1)return false;
+    for (int i = 2; i < n; i++)
+    {
+        if (n % i == 0) return false;
+    }
+return true;
+}
 int prime_numbers_searcher(std::vector<int>& v)
 {
     for (auto i = 0; i < v.size(); i++)
     {
-
-        for(auto j = 2; j < sqrt(v.at(j)); j++)
-            {
-                if(v.at(i) % j == 0)
-                    {
-                        std::cout<<"There are no prime numbers in the sequence" << std::endl;
-                        return 0;
-                    }
-            }
-       if(v.at(i) != 1)
-       {
-           return(v.at(i));
-       }
-
+        if (isPrime(v.at(i))) return v.at(i);
     }
+    std::cout<<" There are no prime numbers "<<std::endl;
 
 }
+
 void replace_vector_with_square_vector(std::vector<int>& v)
 {
     std::vector<int>  squares(v.size());
